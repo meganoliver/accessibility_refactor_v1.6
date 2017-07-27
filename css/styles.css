@@ -84,25 +84,10 @@ header {
 
 }
 
-.tag {
-  color: black;
-  padding: 10px;
-  letter-spacing: 5px;
-}
-
 .name{
   font-weight: 300;
 }
 
-header .name{
-  font-size: 3em;
-}
-.tagline {
-  font-weight: 600;
-  padding: 20px;
-  text-transform: uppercase;
-  color: #781125
-}
 
 section {
   margin: 30px;
@@ -111,7 +96,7 @@ section {
   border-top: 4px solid #ff6347;
   clear: both;
 }
-.card:hover {
+section:hover {
   border-color: #e6cc22;
 }
 
@@ -121,13 +106,6 @@ section {
   width: 200px;
   height: 0%;
   margin: 0 auto;
-}
-
-.information{
-  width: 100%;
-  text-align: center;
-  /*display: inline-block;
-  position: absolute;*/
 }
 
 summary {
@@ -170,24 +148,11 @@ a.social {
   transition: all .5s;
 }
 
-a.twitter {
-  background-image: url(../img/twitter-32.png);
-}
-
-a.youtube {
-  background-image: url(../img/youtube-32.png);
-}
-
-a.spotify {
-  background-image: url(../img/spotify-32.png);
-}
-
-a.social:hover {
+a.social:hover,
+a.social:focus {
   opacity: 1;
 }
-.clearfix {
-  clear: both;
-}
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
@@ -227,10 +192,6 @@ a.social:hover {
   .photo{
     width: 30%;
     margin: 20px 30px;
-  }
-
-  .information{
-    text-align: left;
   }
 
   footer {

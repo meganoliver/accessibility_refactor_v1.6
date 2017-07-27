@@ -49,6 +49,22 @@ button {
   margin-top: 18px;
 }
 
+#bandMem {
+  margin-bottom: 0;
+}
+
+.radio {
+  padding-top: 0;
+}
+
+#submit,
+#album {
+  color: #00aa55;
+  font-size: .7em;
+  text-align: right;
+  font-style: italic;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
   .photo{

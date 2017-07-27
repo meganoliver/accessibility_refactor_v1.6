@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <nav>
+    <nav role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="#">Tour</a></li>
@@ -18,12 +18,12 @@
       </ul>
     </nav>
 
-    <header>
+    <header role="banner">
       <summary class="title">ACCESSIBLE FROG</summary>
       <summary class="subtitle">WE MAKE AWESOME MUSIC</summary>
     </header>
 
-    <main >
+    <main role="main">
       <section>
         <div class="flex">
         <!-- The following images are decorative for this project. -->
@@ -31,11 +31,11 @@
           <img class="pick" src= "img/guitar_pick.png" alt="">
           <p class= "heading">Tour Dates</p>
           <img class="pick" src= "img/guitar_pick.png" alt="">
-          <table>
+          <table role="rowgroup">
             <tr>
-              <th>Date</th>
-              <th>Venue</th>
-              <th>Location</th>
+              <th role="rowheader">Date</th>
+              <th role="rowheader">Venue</th>
+              <th role="rowheader">Location</th>
             </tr>
             <tr>
               <td>Mar 10-12</td>
@@ -56,13 +56,13 @@
               <td>Apr 10</td>
               <td>Paramount Theatre</td>
               <td>Seattle, WA</td>
-            </tr>                                   
+            </tr>
           </table>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Twitter logo"></a></li>
         <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="YouTube logo"></a></li>

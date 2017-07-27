@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <nav>
+    <nav role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
@@ -18,32 +18,32 @@
       </ul>
     </nav>
 
-    <header>
+    <header role="banner">
       <summary class="title">ACCESSIBLE FROG</summary>
       <summary class="subtitle">WE MAKE AWESOME MUSIC</summary>
     </header>
 
-    <main>
+    <main role="main">
       <summary>Survey</summary>
       <section>
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="A crowd of people watching a concert">
           <div class="container">
-            <form class = "survey">
+            <form class = "survey" role="form">
               <fieldset>
                 <legend>Survey</legend>
-                <p>Who is your favorite band member:</p>
-                <input class="radio" type="radio" name="res" value="John" id="john">
-                <label for="john">John</label>
-                <input class="radio" type="radio" name="res" value="Hazzard" id="hazzard">
-                <label for="hazzard">Hazzard</label>
-                <input class="radio" type="radio" name="res" value="Bob" id="bob">
-                <label for="bob">Bob</label>
-                <input class="radio" type="radio" name="res" value="Sally" id="sally">
-                <label for="sally">Sally</label><br>
+                <p id="bandMem">Who is your favorite band member:</p>
+                <input type="radio" name="res" value="John" id="john" aria-describedby="bandMem">
+                <label class="radio" for="john">John</label>
+                <input type="radio" name="res" value="Hazzard" id="hazzard" aria-describedby="bandMem">
+                <label class="radio" for="hazzard">Hazzard</label>
+                <input type="radio" name="res" value="Bob" id="bob" aria-describedby="bandMem">
+                <label class="radio" for="bob">Bob</label>
+                <input type="radio" name="res" value="Sally" id="sally" aria-describedby="bandMem">
+                <label class="radio" for="sally">Sally</label><br>
 
                 <label for="albums">What is your favorite album:</label><br>
-                <select id="albums" name="select">
+                <select id="albums" name="select" aria-describedby="album">
                   <option value="1">A Day Of Old</option>
                   <option value="2">Diamond Fireworks</option>
                   <option value="3">Enjoy Your Desire</option>
@@ -55,7 +55,8 @@
                   <option value="9">Song For Yesterday</option>
                   <option value="10">Street Of The Rider</option>
                   <option value="11">This Is For You</option>
-                </select><br>
+                </select>
+                <p id="album">Choose which of the albums above is your favorite.<p><br>
 
                 <label for="favoriteSong">What is your favorite song:</label><br>
                 <textarea id="favoriteSong"></textarea>
@@ -70,7 +71,7 @@
         <div class="flex">
           <img class="photo" src= "img/the_band.jpg" alt="The band onstage during a concert">
             <div class="container">
-              <form class="newsletter">
+              <form class="newsletter" role="form">
                 <fieldset>
                   <legend>Newsletter</legend>
                   <label for="name">Name: </label>
@@ -79,7 +80,8 @@
                   <input type ="email" name="textfield" id="email"><br>
                   <label for="retypeEmail">Retype Email: </label>
                   <input type ="email" name="textfield" id="retypeEmail"><br>
-                  <button type="submit">Sign Up</button>
+                  <button type="submit" aria-describedby="submit">Sign Up</button>
+                  <p id="submit">Click here to join our mailing list.</p>
                 </fieldset>
               </form>
             </div>
@@ -87,7 +89,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Twitter logo"></a></li>
         <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="YouTube logo"></a></li>
