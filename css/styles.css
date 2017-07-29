@@ -75,13 +75,14 @@ header {
 .title {
   color: #000;
   font-size: 5rem;
-  padding-top: 85px;
+  margin-bottom: 50px;
+  font-weight: bold;
 }
 
 .subtitle {
   color: #800000;
   font-size: 1.5rem;
-
+  font-weight: bold;
 }
 
 .name{
@@ -108,7 +109,7 @@ section:hover {
   margin: 0 auto;
 }
 
-summary {
+span {
   font-size: 2em;
   text-transform: uppercase;
   color: #ff6347;
@@ -136,6 +137,11 @@ footer ul {
 
 footer ul li {
   display: inline-block;
+}
+
+footer img {
+  height: 32px;
+  width: 32px;
 }
 
 a.social {
